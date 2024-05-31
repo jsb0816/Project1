@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  /* Home Section */
+  #home {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #home a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* About Section */
+  #about {
+    text-align: left;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: flex-start; 
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f2;
+    margin-right: 20px; /* 이미지와 박스 사이 간격 조정 */
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-top: 10px; /* 이미지를 살짝 띄우기 위한 마진 조정 */
+    margin-right: 20px; /* 이미지와 텍스트 사이 간격 조정 */
+  }
+
+  .런던 {
+    width: 190px;
+    height: auto;
+    float: left;
+    margin-top: 10px; /* 이미지를 살짝 띄우기 위한 마진 조정 */
+    margin-right: 20px; /* 이미지와 텍스트 사이 간격 조정 */
+  }
+  
+  
+  #myTrip ul li {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  #myTrip ul li:hover {
+    color: gray; /* 마우스 오버 시 텍스트 색상 변경 */
+    text-decoration: underline; /* 마우스 오버 시 텍스트에 밑줄 추가 */
+  }
+  #myTrip ul li {
+    margin-bottom: 370px; /* 각 항목 사이의 여백 추가 */
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .hidden{
+    display: none;
+  }
+  
+  

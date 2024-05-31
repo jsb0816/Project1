@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script>
+    function showSection(sectionId) {
+      const sections = document.getElementsByClassName('section');
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.add('hidden');
+      }
+      const section = document.getElementById(sectionId);
+      section.classList.remove('hidden');
+    }
+    function showAllSections() {
+      const sections = document.getElementsByClassName('section');
+      for (let i = 0; i<sections.length; i++) {
+        sections[i].classList.remove('hidden');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showAllSections()">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('myTrip')">My Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>    
+    <section id="about" class="section hidden">
+      <div class="about-content">
+      <img src="전성빈_주니어.jpg" alt="My Profile Picture" class="profile-image">
+
+        <div class="profile-text">
+          <h2>About Me</h2>
+          <p>안녕하세요, 저는 21학년도에 강원대학교 컴퓨터공학과에 입학한 전성빈입니다.<br>
+            저의 첫번째 자기소개 페이지에 오신것을 환영합니다.<br>
+            즐거운 관람 부탁드립니다.<br>
+            <hr>
+            이름 : 전성빈<br>
+            나이 : 23살 (2002년생)<br>
+            MBTI : ENFP <br>
+            취미 : 테니스, 배드민턴, 헬스, 수영, 맛집 탐방, "여행"<br>
+
+          </p>
+
+        </div>
+      </div>
+
+    </section>
+<section id="myTrip" class="section hidden">
+  <h2>My Trip</h2>
+  <p>여행의 시작<br>
+    <hr>
+    유럽 모음
+  </p>
+  <ul>
+    <li>
+        <h3>London</h3>
+        <img src="런던_1.jpg" alt="My Profile Picture" class="런던">
+        <img src="런던_2.jpg" alt="My Profile Picture" class="런던">
+        <img src="런던_3.jpg" alt="My Profile Picture" class="런던">
+        <img src="런던_4.jpg" alt="My Profile Picture" class="런던">
+        <img src="런던_5.jpg" alt="My Profile Picture" class="런던">
+        <img src="런던_6.jpg" alt="My Profile Picture" class="런던">
+    </li>
+    <li>
+        <h3>Paris</h3>
+        <img src="파리_1.jpg" alt="My Profile Picture" class="런던">
+        <img src="파리_2.jpg" alt="My Profile Picture" class="런던">
+        <img src="파리_3.jpg" alt="My Profile Picture" class="런던">
+        <img src="파리_4.jpg" alt="My Profile Picture" class="런던">
+        <img src="파리_5.jpg" alt="My Profile Picture" class="런던">
+        <img src="파리_6.jpg" alt="My Profile Picture" class="런던">
+    </li>
+    <li>
+        <h3>Interlaken</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>뮌헨</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>디종</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>비엔나</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>프라하</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>류블랴나</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>베니스</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>피사</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>피렌체</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+    <li>
+        <h3>로마</h3>
+        <img src="" alt="My Profile Picture" class="profile-image"><br>
+    </li>
+
+  </ul>
+</section>
+
+
+  <footer>
+    <p>&copy; 2024 My Page. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // 홈 페이지 로딩 시 모든 섹션 보이기
+    const sections = document.getElementsByClassName('section');
+    for (let i = 0; i < sections.length; i++) {
+      sections[i].classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
